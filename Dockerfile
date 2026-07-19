@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y \
     libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
-# 🔥 INSTALLA TUTTE LE DIPENDENZE
 RUN pip install --upgrade pip && \
     pip install playwright Pillow imagehash requests && \
     playwright install chromium
